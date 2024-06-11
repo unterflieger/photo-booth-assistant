@@ -1,22 +1,41 @@
+body {
+    background: linear-gradient(to bottom, grey, black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+}
+
 .logo {
     margin: auto;
     align-self: center;
     padding: 10px;
+    text-align: center;
 }
 
 #logoimg {
     align-self: center;
     width: 50%;
-    padding-left: 25%;
     border-radius: 30px;
 }
 
 .dialog {
     margin: auto;
     width: 80%;
+    max-width: 600px;
     border: 3px solid green;
     padding: 10px;
     border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .textbox {
@@ -24,13 +43,68 @@
     text-align: center;
 }
 
+.textbox input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 .confirmbuttoncontainer {
-    margin-left: 38.5%;
-    margin-right: 38.5%;
-    width: 25%;
+    text-align: center;
+}
+
+#confirmbutton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmbutton:hover {
+    background-color: darkgreen;
 }
 
 #nutzungsbedingungen {
     text-align: center;
     font-size: 10px;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#popupMessage {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#closePopup {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#closePopup:hover {
+    background-color: darkgreen;
 }
