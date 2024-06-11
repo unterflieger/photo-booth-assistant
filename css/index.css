@@ -1,0 +1,39 @@
+.logo {
+    margin: auto;
+    align-self: center;
+    padding: 10px;
+}
+
+#logoimg {
+    align-self: center;
+    width: 50%;
+    padding-left: 25%;
+    border-radius: 30px;
+}
+
+.dialog {
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.textbox {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.confirmbuttoncontainer {
+    margin-left: 38.5%;
+    margin-right: 38.5%;
+    width: 25%;
+}
+
+#confirmbutton {
+}
+
+#nutzungsbedingungen {
+    text-align: center;
+    font-size: 10px;
+}
