@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotostand</title>
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
 </head>
-
 <body>
 
     <div class="logo">
@@ -16,14 +15,20 @@
 
     <div class="dialog">
         <br>
-        <div class="textbox" id="name">
-            <input type="text" name="Nameinput" id="Nameinput" placeholder="Vorname, Name">
+        <div class="textbox" id="vorname">
+            <input type="text" name="Vornameinput" id="Vornameinput" placeholder="Vorname" required>
+        </div>
+        <div class="textbox" id="nachname">
+            <input type="text" name="Nachnameinput" id="Nachnameinput" placeholder="Nachname" required>
         </div>
         <div class="textbox" id="email">
-            <input type="email" name="Emailinput" id="emailinput" placeholder="xy-z@gmail.com">
+            <input type="email" name="Emailinput" id="emailinput" placeholder="E-Mail-Adresse eingeben" required>
+        </div>
+        <div class="textbox" id="confirmemail">
+            <input type="email" name="ConfirmEmailinput" id="ConfirmEmailinput" placeholder="E-Mail-Adresse bestätigen" required>
         </div>
         <div class="textbox" id="number">
-            <input type="text" name="Numberinput" id="numberinput" placeholder="65-68">
+            <input type="text" name="Numberinput" id="numberinput" placeholder="Foto-Nummer" required>
         </div>
         <div class="confirmbuttoncontainer">
             <input type="button" value="Senden" id="confirmbutton">
@@ -34,6 +39,11 @@
             </p>
         </div>
     </div>
-</body>
 
+    <div id="popup" class="popup">
+        <span id="popupMessage"></span>
+        <button id="closePopup" onclick="closePopup()">OK</button>
+    </div>
+
+</body>
 </html>
